@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Album {
+struct Album: Decodable {
     let albumName: String
     let artistName: String
     let artworkURL: String
