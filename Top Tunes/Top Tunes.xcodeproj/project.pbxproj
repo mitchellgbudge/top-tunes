@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		6E326E43240F0B7600F81E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E326E42240F0B7600F81E02 /* AppDelegate.swift */; };
 		6E326E45240F0B7600F81E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E326E44240F0B7600F81E02 /* SceneDelegate.swift */; };
-		6E326E47240F0B7600F81E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E326E46240F0B7600F81E02 /* ViewController.swift */; };
 		6E326E4A240F0B7600F81E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E326E48240F0B7600F81E02 /* Main.storyboard */; };
 		6E326E4C240F0B7A00F81E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E326E4B240F0B7A00F81E02 /* Assets.xcassets */; };
 		6E326E4F240F0B7A00F81E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E326E4D240F0B7A00F81E02 /* LaunchScreen.storyboard */; };
 		6E326E5A240F0B7A00F81E02 /* Top_TunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E326E59240F0B7A00F81E02 /* Top_TunesTests.swift */; };
 		6E326E65240F0B7A00F81E02 /* Top_TunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E326E64240F0B7A00F81E02 /* Top_TunesUITests.swift */; };
+		6E326E76240F0E8800F81E02 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E326E75240F0E8800F81E02 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		6E326E3F240F0B7600F81E02 /* Top Tunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Tunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E326E42240F0B7600F81E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E326E44240F0B7600F81E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6E326E46240F0B7600F81E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E326E49240F0B7600F81E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E326E4B240F0B7A00F81E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E326E4E240F0B7A00F81E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		6E326E60240F0B7A00F81E02 /* Top TunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Top TunesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E326E64240F0B7A00F81E02 /* Top_TunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top_TunesUITests.swift; sourceTree = "<group>"; };
 		6E326E66240F0B7A00F81E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E326E75240F0E8800F81E02 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,9 @@
 		6E326E41240F0B7600F81E02 /* Top Tunes */ = {
 			isa = PBXGroup;
 			children = (
-				6E326E42240F0B7600F81E02 /* AppDelegate.swift */,
-				6E326E44240F0B7600F81E02 /* SceneDelegate.swift */,
-				6E326E46240F0B7600F81E02 /* ViewController.swift */,
-				6E326E48240F0B7600F81E02 /* Main.storyboard */,
-				6E326E4B240F0B7A00F81E02 /* Assets.xcassets */,
-				6E326E4D240F0B7A00F81E02 /* LaunchScreen.storyboard */,
-				6E326E50240F0B7A00F81E02 /* Info.plist */,
+				6E326E74240F0E3200F81E02 /* Model */,
+				6E326E72240F0C7300F81E02 /* Storyboards */,
+				6E326E73240F0C8500F81E02 /* Resources */,
 			);
 			path = "Top Tunes";
 			sourceTree = "<group>";
@@ -126,6 +122,34 @@
 				6E326E66240F0B7A00F81E02 /* Info.plist */,
 			);
 			path = "Top TunesUITests";
+			sourceTree = "<group>";
+		};
+		6E326E72240F0C7300F81E02 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6E326E48240F0B7600F81E02 /* Main.storyboard */,
+				6E326E4D240F0B7A00F81E02 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6E326E73240F0C8500F81E02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E326E4B240F0B7A00F81E02 /* Assets.xcassets */,
+				6E326E50240F0B7A00F81E02 /* Info.plist */,
+				6E326E42240F0B7600F81E02 /* AppDelegate.swift */,
+				6E326E44240F0B7600F81E02 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E326E74240F0E3200F81E02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E326E75240F0E8800F81E02 /* Album.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E326E47240F0B7600F81E02 /* ViewController.swift in Sources */,
 				6E326E43240F0B7600F81E02 /* AppDelegate.swift in Sources */,
 				6E326E45240F0B7600F81E02 /* SceneDelegate.swift in Sources */,
+				6E326E76240F0E8800F81E02 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3F959XXFV;
-				INFOPLIST_FILE = "Top Tunes/Info.plist";
+				INFOPLIST_FILE = "Top Tunes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3F959XXFV;
-				INFOPLIST_FILE = "Top Tunes/Info.plist";
+				INFOPLIST_FILE = "Top Tunes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
