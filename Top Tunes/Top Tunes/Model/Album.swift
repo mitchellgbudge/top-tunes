@@ -11,7 +11,7 @@ import Foundation
 struct Album: Decodable {
     let albumName: String
     let artistName: String
-    let artworkURL: String
+    let artworkURL: URL
     
     enum CodingKeys: String, CodingKey {
         case feed
@@ -28,7 +28,7 @@ struct Album: Decodable {
         let albumContainer = try resultsContainer.nestedContainer(keyedBy: CodingKeys.self)
         albumName = try albumContainer.decode(String.self, forKey: .albumName)
         artistName = try albumContainer.decode(String.self, forKey: .artistName)
-        artworkURL = try albumContainer.decode(String.self, forKey: .artworkURL)
+        artworkURL = try albumContainer.decode(URL.self, forKey: .artworkURL)
     }
     
 }

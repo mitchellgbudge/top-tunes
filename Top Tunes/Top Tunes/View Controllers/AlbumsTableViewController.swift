@@ -10,21 +10,35 @@ import UIKit
 
 class AlbumsTableViewController: UITableViewController {
 
+    // MARK: - Properties
+    
+    let albumController = AlbumController()
+    
+    // MARK: - View lifecycle methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        albumController.fetchAlbums { (error) in
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return albumController.albums.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AlbumCell", for: indexPath)
+        let album = albumController.albums[indexPath.row]
+        guard let imageData = try? Data(contentsOf: album.artworkURL) else { return UITableViewCell() }
+        cell.imageView?.image = UIImage(data: imageData)
+        cell.textLabel?.text = album.albumName
+        cell.detailTextLabel?.text = album.artistName
+        
         return cell
     }
 
