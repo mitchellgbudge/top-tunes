@@ -16,6 +16,7 @@
 		6E326E65240F0B7A00F81E02 /* Top_TunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E326E64240F0B7A00F81E02 /* Top_TunesUITests.swift */; };
 		6E326E76240F0E8800F81E02 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E326E75240F0E8800F81E02 /* Album.swift */; };
 		6E326E79240F11AA00F81E02 /* AlbumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E326E78240F11AA00F81E02 /* AlbumController.swift */; };
+		6E326E7D24103D4100F81E02 /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E326E7C24103D4100F81E02 /* AlbumsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6E326E66240F0B7A00F81E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E326E75240F0E8800F81E02 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		6E326E78240F11AA00F81E02 /* AlbumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumController.swift; sourceTree = "<group>"; };
+		6E326E7C24103D4100F81E02 /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,8 @@
 			children = (
 				6E326E74240F0E3200F81E02 /* Model */,
 				6E326E77240F119A00F81E02 /* Model Controller */,
+				6E326E7A24103D0E00F81E02 /* Views */,
+				6E326E7B24103D1700F81E02 /* View Controllers */,
 				6E326E72240F0C7300F81E02 /* Storyboards */,
 				6E326E73240F0C8500F81E02 /* Resources */,
 			);
@@ -161,6 +165,21 @@
 				6E326E78240F11AA00F81E02 /* AlbumController.swift */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		6E326E7A24103D0E00F81E02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E326E7B24103D1700F81E02 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E326E7C24103D4100F81E02 /* AlbumsTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +317,7 @@
 				6E326E79240F11AA00F81E02 /* AlbumController.swift in Sources */,
 				6E326E45240F0B7600F81E02 /* SceneDelegate.swift in Sources */,
 				6E326E76240F0E8800F81E02 /* Album.swift in Sources */,
+				6E326E7D24103D4100F81E02 /* AlbumsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
